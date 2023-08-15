@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/Individual Project/script.js"></script>
+    <link rel="stylesheet" href="/Individual Project/style.css" />
+    <title>Personal Project</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Temperature Converter</h1>
+      <form class="converter">
+        <fieldset>
+          <div class="val">
+            <label>Temperature</label><br />
+            <input type="number" id="inputval" />
+          </div>
+
+          <div class="val">
+            <label>From</label><br />
+            <tr>
+              <select class="temp1">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+              </select>
+            </tr>
+          </div>
+
+          <div class="val">
+            <label>To</label><br />
+            <tr>
+              <select class="temp2">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="celsius">Celsius</option>
+              </select>
+            </tr>
+          </div>
+        </fieldset>
+        <button type="submit">Convert</button>
+      </form>
+      <div class="result">
+        <p id="result"></p>
+      </div>
+    </div>
+  </body>
+</html>
