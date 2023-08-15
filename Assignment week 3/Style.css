@@ -1,0 +1,118 @@
+/* Importing font poppins */
+@import url("https://fonts.googleapis.com/cs2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 32px;
+  margin: 0 15px;
+  background-color: rgb(241, 241, 239);
+  box-shadow: 0 5px 10px rgb(194, 191, 191);
+}
+
+.container header {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+.container header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 4px;
+  width: 32px;
+  border-radius: 8px;
+  background-color: rgb(226, 218, 108);
+}
+.container form {
+  position: relative;
+  max-height: fit-content;
+  padding: 24px;
+  background-color: #f2f2f2;
+}
+
+.container form .details {
+  margin-top: 8px;
+}
+
+.container form .title {
+  display: flex;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin: 6px 0;
+}
+.container form .field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+form .field .input-fields {
+  display: flex;
+  width: calc(100% / 3 - 16px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+.input-fields input {
+  height: 42px;
+}
+.input-fields label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+.input-fields input {
+  outline: none;
+  border: 1px solid #aaa;
+  font-size: 12px;
+  color: #727272;
+  padding: 0 16px;
+  height: 42px;
+  margin: 8px 0px;
+}
+.input-fields input.is (:focus, :valid) {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+.input-fields input [type="date"] {
+  color: #707070;
+}
+.input-fields input [type="date"]:valid {
+  color: #333;
+}
+
+.container form button {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  justify-content: center;
+  width: 150px;
+  stroke: none;
+  
+}
+
+.submitBtn{
+  margin-top: 48px;
+  background-color: rgb(226, 218, 108);
+  stroke: none;
+}
