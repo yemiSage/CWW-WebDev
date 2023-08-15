@@ -114,5 +114,6 @@ form .field .input-fields {
 .submitBtn{
   margin-top: 48px;
   background-color: rgb(226, 218, 108);
-  stroke: none;
+  border: none;
+  border-radius: 6px;
 }
